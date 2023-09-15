@@ -4,7 +4,7 @@ const Cart = ({ selectorCourse }) => {
     console.log(selectorCourse);
     return (
         <div>
-            <h1 className="mt-10">Hello World</h1>
+            <h1 className="mt-10 pb-3 text-xl text-purple-700">Credit Hour Remaining <span>20</span> hr</h1>
             <hr />
             <p className="font-bold text-2xl mt-3">Course Name</p>
             <div className="mt-2">

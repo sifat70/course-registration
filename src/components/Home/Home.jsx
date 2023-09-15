@@ -16,7 +16,12 @@ const Home = () => {
 
 
     const handleSelectedCourse =(course) =>{
-        setSelectorCourse([...selectorCourse, course])
+        const isExist = selectorCourse.find((item) => item.id == course.id);
+        if(isExist){
+            return alert('already enrolled the course')
+        }else{
+            setSelectorCourse([...selectorCourse, course])
+        }        
     }
 
     return (
