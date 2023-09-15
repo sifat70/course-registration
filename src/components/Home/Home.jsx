@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 
+
 const Home = () => {
 
 
@@ -43,8 +44,8 @@ const Home = () => {
     }
 
     return (
-        <div className="flex">
-            <div className="grid grid-cols-3 w-[80%]">
+        <div className="container mx-auto flex">
+            <div className="grid grid-cols-3 w-[75%] gap-5">
                 {
                     allCourse.map((course) => (
                         <div key={course.id} className=" card bg-base-100 shadow-xl">
@@ -55,8 +56,8 @@ const Home = () => {
                                 <h2 className="card-title">{course.name}</h2>
                                 <p>{course.description}</p>
                                 <div className="flex justify-around">
-                                    <div><p>Price: {course.price}</p></div>
-                                    <div><p>Credit: {course.credit} hr</p></div>
+                                    <div><p><span className="text-xl pr-3">$</span>Price: {course.price}</p></div>
+                                    <div><p> 📖 Credit: {course.credit} hr</p></div>
                                 </div>
                                 <div className="card-actions">
                                     <button onClick={() => handleSelectedCourse(course)} className="btn w-full btn-primary">Select</button>
@@ -65,7 +66,7 @@ const Home = () => {
                         </div>
                     ))}
             </div>
-            <div>
+            <div className="pl-5">
                 <Cart selectorCourse={selectorCourse} remainingHour={remainingHour} creditHour={creditHour}></Cart>
             </div>
         </div>
