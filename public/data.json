@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Introduction to C Programming",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "C is a procedural programming language initially developed by Dennis Ritchie in the year 1972. ",
         "price": 15000,
         "image": "https://i.ibb.co/kDZ6N7x/Rectangle-2-2.png",
         "credit": 1
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "Introduction to Algorithms",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "An algorithm is a step-wise representation of a solution to a given problem. ",
         "price": 25000,
         "image": "https://i.ibb.co/nP05ck5/Rectangle-2-3.png",
         "credit": 2
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "name": "Introduction to C++ for DSA",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "Key concepts of C++ DSA include Arrays, Linked Lists, Stacks, Queues, Trees, and Graphs. Common Algorithms ",
         "price": 10000,
         "image": "https://i.ibb.co/7R4h43r/Rectangle-2-4.png",
         "credit": 10
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "name": "Basic Data Structures",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "Arrays, linked lists, stacks, queues, hash tables, trees, heaps, and graphs are.",
         "price": 35000,
         "image": "https://i.ibb.co/QkJV9XW/Rectangle-3.png",
         "credit": 5
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "name": "Introduction to OOP Python",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in p",
         "price": 19000,
         "image": "https://i.ibb.co/0MMQMkv/Rectangle-2.png",
         "credit": 5
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "name": "Software Engineering",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "the branch of computer science that deals with the design, development, testing, and maintenance of software ",
         "price": 23000,
         "image": "https://i.ibb.co/C8C9k4g/Rectangle-2-5.png",
         "credit": 2
@@ -50,7 +50,7 @@
     {
         "id": 7,
         "name": "AWS, Cloud Computing",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "C is a procedural programming language initially developed by Dennis Ritchie in the year 1972.",
         "price": 35000,
         "image": "https://i.ibb.co/nQsRkQY/Rectangle-3-1.png",
         "credit": 5
@@ -58,7 +58,7 @@
     {
         "id": 8,
         "name": "Database (MySQL)",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "An algorithm is a step-wise representation of a solution to a given problem.",
         "price": 19000,
         "image": "https://i.ibb.co/cwjZGRg/Rectangle-2-1.png",
         "credit": 5
@@ -66,7 +66,7 @@
     {
         "id": 9,
         "name": "Problem-Solving Part",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "It is a long established fact that a reader will be distracted by the readable.",
         "price": 23000,
         "image": "https://i.ibb.co/Jz4XbGJ/Rectangle-2-6.png",
         "credit": 2
