@@ -6,6 +6,8 @@ const Home = () => {
 
     const [allCourse, setAllCourse] = useState([]);
     const [selectorCourse, setSelectorCourse] = useState([])
+    const [remainingHour, setRemainingHour] = useState(0)
+    const [creditHour, setCreditHour] = useState(0)
 
 
     useEffect(() => {
@@ -15,13 +17,29 @@ const Home = () => {
     }, [])
 
 
-    const handleSelectedCourse =(course) =>{
+    const handleSelectedCourse = (course) => {
         const isExist = selectorCourse.find((item) => item.id == course.id);
-        if(isExist){
+
+        let count = course.credit;
+
+        if (isExist) {
             return alert('already enrolled the course')
-        }else{
-            setSelectorCourse([...selectorCourse, course])
-        }        
+        } else {
+            selectorCourse.forEach((item) => {
+                count += item.credit;
+            });
+
+            const totalRemaining = 20 - count;
+
+            if (count > 20) {
+                return alert('kam serce')
+            } else {
+                setCreditHour(count)
+                setRemainingHour(totalRemaining)
+                setSelectorCourse([...selectorCourse, course])
+            }
+
+        }
     }
 
     return (
@@ -41,14 +59,14 @@ const Home = () => {
                                     <div><p>Credit: {course.credit} hr</p></div>
                                 </div>
                                 <div className="card-actions">
-                                    <button onClick={() =>handleSelectedCourse(course)} className="btn w-full btn-primary">Select</button>
+                                    <button onClick={() => handleSelectedCourse(course)} className="btn w-full btn-primary">Select</button>
                                 </div>
                             </div>
                         </div>
                     ))}
             </div>
             <div>
-                <Cart selectorCourse={selectorCourse}></Cart>
+                <Cart selectorCourse={selectorCourse} remainingHour={remainingHour} creditHour={creditHour}></Cart>
             </div>
         </div>
     );
