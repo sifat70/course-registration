@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import './Cart.css'
-const Cart = ({ selectorCourse, remainingHour, creditHour}) => {
+const Cart = ({ selectorCourse, remainingHour, creditHour, totalCost}) => {
     console.log(selectorCourse);
     return (
         <div>
@@ -16,7 +16,7 @@ const Cart = ({ selectorCourse, remainingHour, creditHour}) => {
             <hr />
             <p className="mt-5 pb-5">Total Credit Hour : {creditHour}</p>
             <hr />
-            <p>Total Price:</p>
+            <p>Total Price: {totalCost}</p>
         </div>
     );
 };

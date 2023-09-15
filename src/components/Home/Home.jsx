@@ -9,6 +9,7 @@ const Home = () => {
     const [selectorCourse, setSelectorCourse] = useState([])
     const [remainingHour, setRemainingHour] = useState(0)
     const [creditHour, setCreditHour] = useState(0)
+    const [totalCost, setTotalCost] = useState(0)
 
 
     useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
         const isExist = selectorCourse.find((item) => item.id == course.id);
 
         let count = course.credit;
+        let total = course.price
 
         if (isExist) {
             return alert('already enrolled the course')
@@ -31,6 +33,7 @@ const Home = () => {
             });
 
             const totalRemaining = 20 - count;
+            setTotalCost(totalCost + total)
 
             if (count > 20) {
                 return alert('kam serce')
@@ -67,7 +70,7 @@ const Home = () => {
                     ))}
             </div>
             <div className="pl-5">
-                <Cart selectorCourse={selectorCourse} remainingHour={remainingHour} creditHour={creditHour}></Cart>
+                <Cart selectorCourse={selectorCourse} remainingHour={remainingHour} creditHour={creditHour} totalCost={totalCost}></Cart>
             </div>
         </div>
     );
