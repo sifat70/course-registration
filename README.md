@@ -1,8 +1,22 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 3 Project features
 
-Currently, two official plugins are available:
+* Give 9 course Of different lession and different subject.
+* You have anrolled to 20 hour time of any cource and must be credit hour.
+* End of course you have junior software developer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+### Discuss how you managed the state in your assignment project.
+
+
+ I have created 5 State. I explained the topic 
+
+* First state use to load all data then set card dynamic information
+* Second state use select the course find the data to condition of one or exist number 
+* Third state set remaing hour to cart remaing 
+* Forth state use to set credit hour to the directiol data 
+* Fifth state use to total cost the all selected course
+
+

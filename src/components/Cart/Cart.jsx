@@ -10,13 +10,13 @@ const Cart = ({ selectorCourse, remainingHour, creditHour, totalCost}) => {
             <p className="font-bold text-2xl mt-3">Course Name</p>
             <div className="hello mt-2 pb-4">
                 {
-                    selectorCourse.map((course) => (<li>{course.name}</li>))
+                    selectorCourse.map((course) => (<li className='text-lime-600 font-extrabold'>{course.name}</li>))
                 }
             </div>
             <hr />
-            <p className="mt-5 pb-5">Total Credit Hour : {creditHour}</p>
+            <p className="mt-5 pb-5 font-bold">Total Credit Hour : {creditHour}</p>
             <hr />
-            <p>Total Price: {totalCost}</p>
+            <p className='font-bold'>Total Price: {totalCost} USD</p>
         </div>
     );
 };

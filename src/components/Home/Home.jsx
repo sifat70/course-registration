@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
+// eslint-disable-next-line no-unused-vars
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Home = () => {
@@ -7,7 +10,7 @@ const Home = () => {
 
     const [allCourse, setAllCourse] = useState([]);
     const [selectorCourse, setSelectorCourse] = useState([])
-    const [remainingHour, setRemainingHour] = useState(0)
+    const [remainingHour, setRemainingHour] = useState(20)
     const [creditHour, setCreditHour] = useState(0)
     const [totalCost, setTotalCost] = useState(0)
 
@@ -26,7 +29,7 @@ const Home = () => {
         let total = course.price
 
         if (isExist) {
-            return alert('already enrolled the course')
+            return toast('already enrolled the course')
         } else {
             selectorCourse.forEach((item) => {
                 count += item.credit;
@@ -36,19 +39,18 @@ const Home = () => {
             setTotalCost(totalCost + total)
 
             if (count > 20) {
-                return alert('kam serce')
+                return toast('Not Enough Hour')
             } else {
                 setCreditHour(count)
                 setRemainingHour(totalRemaining)
                 setSelectorCourse([...selectorCourse, course])
             }
-
         }
     }
 
     return (
-        <div className="container mx-auto flex">
-            <div className="grid grid-cols-3 w-[75%] gap-5">
+        <div className="container mx-auto flex flex-wrap">
+            <div className="grid lg:grid-cols-3 w-[75%] gap-5 md:grid-cols-2 grid-cols-1">
                 {
                     allCourse.map((course) => (
                         <div key={course.id} className=" card bg-base-100 shadow-xl">
@@ -64,6 +66,7 @@ const Home = () => {
                                 </div>
                                 <div className="card-actions">
                                     <button onClick={() => handleSelectedCourse(course)} className="btn w-full btn-primary">Select</button>
+                                    <ToastContainer />
                                 </div>
                             </div>
                         </div>
